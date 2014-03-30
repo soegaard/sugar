@@ -7,7 +7,7 @@
     (displayln (format "~a = ~v" 'var var) (current-error-port)) 
     var))
 
-(require (prefix-in williams: describe))
+(require (prefix-in williams: (planet williams/describe:1:5/describe)))
 
 (define (describe x)
   (parameterize ([current-output-port (current-error-port)])
